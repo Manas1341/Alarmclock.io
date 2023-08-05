@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock Using JavaScript</title>
+    <link rel="stylesheet" href="alarm.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <div class="time" id="clock">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+                <div class=controls>
+                    <p>Set Alarm Time:</p>
+                    <input type="datetime-local" name="alarmTime" onchange="setAlarmTime(this.value)" />
+                </div>
+                <div class="btn">
+                    <button class="button set-alarm" onclick="setAlarm()">Set alarm</button>
+                    <button class="button clear-alarm" onclick="clearAlarm()">Clear alarm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="alarm.js"></script>
+</body>
+
+</html>
