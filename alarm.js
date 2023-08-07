@@ -3,7 +3,7 @@ let min = document.getElementById("min");
 let sec = document.getElementById("sec");
 
 const display = document.getElementById("clock")
-const audio = new Audio("/mixkit-alarm-digital-clock-beep-989.wav")
+const audio = new Audio("./mixkit-alarm-digital-clock-beep-989.wav")
 audio.loop = true;
 let alarmTime = null;
 let alarmTimeout = null;
